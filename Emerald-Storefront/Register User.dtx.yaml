@@ -1,0 +1,153 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open https://commerce-preview.sbx0216.play.hclsofy.com/Emerald/
+      meta:
+        browserName: firefox
+        browserVersion: 130.0.1
+        platformName: windows
+      url: https://commerce-preview.sbx0216.play.hclsofy.com/Emerald/
+  - log: |-
+      Edit the Email Address variable before executing the test - must be unique
+      The test won't validate that the user was registered correctly since it wasn't able to capture a smartshot of the relevant screen. This means the test will pass, even if the net result was a failure to register a user.
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: shot/lde3zd.dti.jpeg#418
+            object: html.inputtext
+            target:
+              - properties:
+                  - placeholder:
+                      - val: Search
+        - verify:
+            shot: shot/lde3zd.dti.jpeg#418
+            object: html.img
+            target:
+              - properties:
+                  - alt:
+                      - val: Store Logo
+        - verify:
+            shot: shot/lgilwv.dti.jpeg#872
+            object: html.p
+            target:
+              - properties:
+                  - content:
+                      - val: 0 Items
+        - click:
+            shot: shot/lgilwv.dti.jpeg#872
+            object: html.p
+            target:
+              - properties:
+                  - content:
+                      - val: Sign In / Register
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/jfs5y6.dti.jpeg#3188
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: Register Now
+        - click:
+            shot: shot/szpgvs.dti.jpeg#4444
+            object: html.inputemail
+            target:
+              - properties:
+                  - label:
+                      - val: Email Address *
+        - type:
+            object: html.inputemail
+            target:
+              - properties:
+                  - label:
+                      - val: Email Address *
+            value: '${EmailAddress}'
+        - click:
+            enabled: 'false'
+            shot: shot/fqwmjs.dti.jpeg#4724
+            object: html.inputtext
+            target:
+              - properties:
+                  - label:
+                      - val: First Name *
+        - click:
+            shot: shot/kfjpd4.dti.jpeg#6426
+            object: html.inputtext
+            target:
+              - properties:
+                  - label:
+                      - val: First Name *
+        - type:
+            object: html.inputtext
+            target:
+              - properties:
+                  - label:
+                      - val: First Name *
+            value: '${FirstName}'
+        - click:
+            shot: shot/7twf6h.dti.jpeg#8129
+            object: html.inputtext
+            target:
+              - properties:
+                  - label:
+                      - val: Last Name *
+        - type:
+            object: html.inputtext
+            target:
+              - properties:
+                  - label:
+                      - val: Last Name *
+            value: '${LastName}'
+        - click:
+            shot: shot/xv4ryi.dti.jpeg#9833
+            object: html.inputpassword
+            target:
+              - properties:
+                  - label:
+                      - val: Password *
+        - type:
+            object: html.inputpassword
+            target:
+              - properties:
+                  - label:
+                      - val: Password *
+            value: '${Password}'
+        - click:
+            shot: shot/gcrv4c.dti.jpeg#11536
+            object: html.inputpassword
+            target:
+              - properties:
+                  - label:
+                      - val: Verify Password *
+        - type:
+            object: html.inputpassword
+            target:
+              - properties:
+                  - label:
+                      - val: Verify Password *
+            value: '${Password}'
+        - click:
+            shot: shot/okngkp.dti.jpeg#14976
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: Complete Registration
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: shot/vig522.dti.jpeg#17902
+            object: html.img
+            target:
+              - properties:
+                  - alt:
+                      - val: Store Logo
+vars:
+  FirstName: Bill
+  EmailAddress: bill@hcl.com
+  LastName: Baggins
+  Password: Pa55word!
