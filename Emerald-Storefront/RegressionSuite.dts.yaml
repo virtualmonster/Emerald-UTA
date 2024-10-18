@@ -1,1 +1,3 @@
-{}
+tests:
+  - Register User.dtx.yaml
+  - BuyStuff.dtx.yaml
