@@ -47,6 +47,17 @@ steps:
               - properties:
                   - content:
                       - val: $135.00$140.00
+        - assign:
+            shot: shot/zloxe6.dti.jpeg#1668
+            object: html.span
+            target:
+              - properties:
+                  - class:
+                      - val: product-price
+            properties:
+              - content:
+                  - var: Price
+        - log: 'Price of item: ${Price}'
         - click:
             shot: shot/zloxe6.dti.jpeg#1668
             object: html.button
@@ -91,3 +102,5 @@ steps:
               - properties:
                   - alt:
                       - val: Store Logo
+vars:
+  Price: ''
