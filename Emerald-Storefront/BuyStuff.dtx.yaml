@@ -1,0 +1,88 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open https://commerce-preview.sbx0216.play.hclsofy.com/Emerald/
+      meta:
+        browserName: edge
+        browserVersion: 129.0.2792.89
+        platformName: windows
+      url: https://commerce-preview.sbx0216.play.hclsofy.com/Emerald/
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: shot/yjotxu.dti.jpeg#209
+            object: html.span
+            target:
+              - properties:
+                  - content:
+                      - val: Shop Living Room
+  - with:
+      note: Living Room | Emerald
+      steps:
+        - click:
+            shot: shot/uqtidz.dti.jpeg#638
+            object: html.h3
+            target:
+              - properties:
+                  - content:
+                      - val: Lighting
+                locators:
+                  - position: '3'
+  - with:
+      note: Lighting | Emerald
+      steps:
+        - click:
+            shot: shot/q4orqc.dti.jpeg#1235
+            object: html.p
+            target:
+              - properties:
+                  - content:
+                      - val: Brushed Pendant Light
+  - with:
+      note: Brushed Pendant Light | Emerald
+      steps:
+        - click:
+            shot: shot/zloxe6.dti.jpeg#1668
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: Add to Cart
+        - click:
+            shot: shot/rg6nna.dti.jpeg#1968
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: View Full Cart
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/vem7zx.dti.jpeg#2516
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: Checkout
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/m26wx5.dti.jpeg#2866
+            object: html.button
+            target:
+              - properties:
+                  - content:
+                      - val: Checkout as a guest
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/7pzdni.dti.jpeg#3061
+            object: html.img
+            target:
+              - properties:
+                  - alt:
+                      - val: Store Logo
