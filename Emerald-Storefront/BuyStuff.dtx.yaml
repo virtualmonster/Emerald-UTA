@@ -40,6 +40,13 @@ steps:
   - with:
       note: Brushed Pendant Light | Emerald
       steps:
+        - verify:
+            shot: shot/zloxe6.dti.jpeg#1668
+            object: html.h5
+            target:
+              - properties:
+                  - content:
+                      - val: $135.00$140.00
         - click:
             shot: shot/zloxe6.dti.jpeg#1668
             object: html.button
