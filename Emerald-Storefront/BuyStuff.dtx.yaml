@@ -27,8 +27,6 @@ steps:
               - properties:
                   - content:
                       - val: Lighting
-                locators:
-                  - position: '3'
   - with:
       note: Lighting | Emerald
       steps:
