@@ -148,6 +148,6 @@ steps:
                       - val: Store Logo
 vars:
   FirstName: Bill
-  EmailAddress: bill@hcl.com
   LastName: Baggins
   Password: Pa55word!
+  EmailAddress: billaaa@hcl.com
