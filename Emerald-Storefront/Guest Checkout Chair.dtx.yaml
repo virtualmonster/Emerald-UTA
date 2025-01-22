@@ -1,0 +1,290 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open https://commerce-preview.sbx0033.play.hclsofy.com/Emerald?storeId=11
+      meta:
+        browserName: edge
+        browserVersion: 132.0.2957.115
+        platformName: windows
+      url: https://commerce-preview.sbx0033.play.hclsofy.com/Emerald?storeId=11
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: shot/m7z56u.dti.jpeg#61
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Shop Living Room
+  - with:
+      note: Living Room | Emerald
+      steps:
+        - click:
+            shot: shot/5hl4aa.dti.jpeg#442
+            object: html.h3
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Furniture
+  - with:
+      note: Furniture | Emerald
+      steps:
+        - click:
+            shot: shot/y7ezpk.dti.jpeg#750
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Flared Accent Chair
+  - with:
+      note: Flared Accent Chair | Emerald
+      steps:
+        - click:
+            shot: shot/htbxcf.dti.jpeg#1292
+            object: html.button
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='product-image-details_LR-FNTR-0002']/div/div/div[2]/div/fieldset/div/button[2]
+        - click:
+            shot: shot/ppuvm2.dti.jpeg#1597
+            object: html.i
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //div[@id='product-image-details_LR-FNTR-0002']/div/div/div[2]/div/p[3]/span/b/i[2]
+        - click:
+            shot: shot/eirjf3.dti.jpeg#1906
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Add to Cart
+        - click:
+            shot: shot/notcsa.dti.jpeg#2186
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: View Full Cart
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/3g6ybv.dti.jpeg#2663
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Checkout
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/4amr43.dti.jpeg#2977
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Checkout as a guest
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/wbsvhq.dti.jpeg#3274
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Create a New Address
+        - click:
+            shot: shot/5qgvzv.dti.jpeg#3652
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address Name *
+        - type:
+            shot: shot/eab5yk.dti.jpeg#4050
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address Name *
+            value: Home
+        - type:
+            shot: shot/wucvfm.dti.jpeg#4456
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: First name *
+            value: Stuart
+        - type:
+            shot: shot/itzyos.dti.jpeg#4862
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Last name *
+            value: Walker
+        - type:
+            shot: shot/halfb2.dti.jpeg#5268
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address line 1 *
+            value: 101 The Street
+        - type:
+            shot: shot/c6hn75.dti.jpeg#5682
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: City *
+            value: The Town
+        - type:
+            shot: shot/pf33wo.dti.jpeg#6093
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Country *
+            value: UK
+        - type:
+            shot: shot/fmal2f.dti.jpeg#6505
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: State / Province *
+            value: London
+        - type:
+            shot: shot/c4ncln.dti.jpeg#6917
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Zip / Postal code *
+            value: ABC 123
+        - type:
+            shot: shot/742bcg.dti.jpeg#7328
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Phone (optional)
+            value: '012345678901'
+        - type:
+            shot: shot/tfukd7.dti.jpeg#7739
+            object: html.inputemail
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Email *
+            value: stuart@hcl.com
+        - click:
+            shot: shot/mjinke.dti.jpeg#8564
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Save and select this address
+        - click:
+            shot: shot/kflz3a.dti.jpeg#8922
+            object: html.inputradio
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Express
+        - click:
+            shot: shot/6i75om.dti.jpeg#9411
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Continue to Payment
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/e7o4qe.dti.jpeg#9722
+            object: html.inputradio
+            identifiers:
+              - properties:
+                  - label:
+                      - val: VISA Credit Card
+        - click:
+            shot: shot/bv6w3k.dti.jpeg#10157
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Credit Card Number *
+        - type:
+            shot: shot/qgleb7.dti.jpeg#11003
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Credit Card Number *
+            value: '4111111111111111'
+        - select:
+            shot: shot/dbjuar.dti.jpeg#11442
+            object: html.select
+            identifiers:
+              - properties:
+                  - content:
+                      - val: '2021'
+            value: '2030'
+        - click:
+            shot: shot/rtkzrd.dti.jpeg#11876
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: CVV Code *
+        - type:
+            shot: shot/stefkp.dti.jpeg#12298
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: CVV Code *
+            value: '123'
+        - click:
+            shot: shot/p4pj6s.dti.jpeg#13197
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Use This Address
+        - click:
+            shot: shot/3lrp27.dti.jpeg#13632
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Review Order
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/lt557c.dti.jpeg#14139
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Place Order
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: shot/5bo2z5.dti.jpeg#14342
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg
