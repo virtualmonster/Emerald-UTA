@@ -15,10 +15,8 @@ steps:
             object: html.p
             identifiers:
               - properties:
-                  - content:
-                      - val: Furniture
-                locators:
-                  - position: '2'
+                  - xpath:
+                      - val: //div[@id='root']/div/div/div/header/div[2]/div/div/div[5]/button/p
   - with:
       note: Furniture | Emerald
       steps:
