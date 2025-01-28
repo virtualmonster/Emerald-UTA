@@ -45,8 +45,10 @@ steps:
             object: html.button
             identifiers:
               - properties:
-                  - xpath:
-                      - val: //div[@id='product-image-details_LR-FNTR-0002']/div/div/div[2]/div/fieldset/div/button[2]
+                  - class:
+                      - val: sc-epqpcT BfcsL   medium
+                locators:
+                  - position: '2'
         - click:
             shot: shot/ppuvm2.dti.jpeg#1597
             object: html.i
