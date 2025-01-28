@@ -1,0 +1,41 @@
+note: Generated from recorded traffic
+steps:
+  - open:
+      note: Open http://10.0.2.15:3001/Emerald/
+      meta:
+        browserName: edge
+        browserVersion: 132.0.2957.127
+        platformName: windows
+      url: http://10.0.2.15:3001/Emerald/
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: shot/ed2i3q.dti.jpeg#182
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Furniture
+                locators:
+                  - position: '2'
+  - with:
+      note: Furniture | Emerald
+      steps:
+        - click:
+            shot: shot/enw5hf.dti.jpeg#977
+            object: html.div
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //a[@id='productCard_a_1_14022']/div/div/div/div/div
+  - with:
+      note: Flared Accent Chair | Emerald
+      steps:
+        - click:
+            shot: shot/rqklbj.dti.jpeg#1589
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Add to Cart
