@@ -1,6 +1,6 @@
 steps:
   - open:
-      url: google.co.uk
+      url: https://google.co.uk
   - with:
       steps:
         - click:
