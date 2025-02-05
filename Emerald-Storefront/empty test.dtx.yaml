@@ -1,1 +1,14 @@
-{}
+steps:
+  - open:
+      url: google.co.uk
+  - with:
+      steps:
+        - click:
+            object: text
+        - type:
+            object: html.inputtext
+            value: hcl devops test
+        - press: enter
+        - pause: 5s
+        - click:
+            object: html.a
