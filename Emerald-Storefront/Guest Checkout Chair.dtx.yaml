@@ -6,7 +6,7 @@ steps:
         browserName: edge
         browserVersion: 132.0.2957.115
         platformName: windows
-      url: https://commerce-preview.sbx0033.play.hclsofy.com/Emerald?storeId=11
+      url: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
   - with:
       note: Welcome to Emerald
       steps:
@@ -49,13 +49,6 @@ steps:
                       - val: sc-epqpcT BfcsL   medium
                 locators:
                   - position: '2'
-        - click:
-            shot: shot/ppuvm2.dti.jpeg#1597
-            object: html.i
-            identifiers:
-              - properties:
-                  - xpath:
-                      - val: //div[@id='product-image-details_LR-FNTR-0002']/div/div/div[2]/div/p[3]/span/b/i[2]
         - click:
             shot: shot/eirjf3.dti.jpeg#1906
             object: html.button
