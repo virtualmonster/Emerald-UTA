@@ -1,0 +1,331 @@
+note: Generated from recorded traffic using edge 135.0.3179.54
+configuration:
+  vars:
+    URL:
+      expr: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+      modifier: in
+    First_name:
+      expr: firstname
+      modifier: in
+    First_Name:
+      expr: firstname
+      modifier: in
+    phone:
+      expr: '1234567890'
+      modifier: in
+    Country:
+      expr: country
+      modifier: in
+    Email:
+      expr: name@domain.com
+      modifier: in
+    State_Province:
+      expr: state
+      modifier: in
+    Zip_Postal_code:
+      expr: ABC123
+      modifier: in
+    Last_Name:
+      expr: lastname
+      modifier: in
+    City:
+      expr: city
+      modifier: in
+    Last_name:
+      expr: lastname
+      modifier: in
+    Address_line_1:
+      expr: address1
+      modifier: in
+    Address_Name:
+      expr: Home
+      modifier: in
+    Password:
+      expr: Gr33nhat
+      modifier: in
+    Verify_Password:
+      expr: Gr33nhat
+      modifier: in
+    Address2:
+      expr: address2
+      modifier: in
+    Email_Address: bob4@domain.com
+steps:
+  - open:
+      note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+      meta:
+        browserName: edge
+        browserVersion: 135.0.3179.54
+        platformName: windows
+      url: '${URL}'
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: Welcome to Emerald_3qa653.dti.jpeg#44
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign In / Register
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_w2kjld.dti.jpeg#416
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Register Now
+        - click:
+            shot: Emerald_fpq6qt.dti.jpeg#558
+            object: html.inputemail
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Email Address *
+        - type:
+            shot: Emerald_megugv.dti.jpeg#759
+            object: html.inputemail
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Email Address *
+            value: '${Email_Address}'
+        - click:
+            shot: Emerald_gopome.dti.jpeg#1168
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: First Name *
+        - type:
+            shot: Emerald_pipken.dti.jpeg#1369
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: First Name *
+            value: '${First_Name}'
+        - type:
+            shot: Emerald_yv3ucf.dti.jpeg#1578
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Last Name *
+            value: '${Last_Name}'
+        - type:
+            shot: Emerald_4k3mll.dti.jpeg#1788
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Password *
+            value: '${Password}'
+        - type:
+            shot: Emerald_2txta3.dti.jpeg#1997
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Verify Password *
+            value: '${Verify_Password}'
+        - click:
+            shot: Emerald_l5a55e.dti.jpeg#3456
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Complete Registration
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: Welcome to Emerald_5kjl7u.dti.jpeg#3556
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Welcome, firstname
+        - click:
+            shot: Welcome to Emerald_cushql.dti.jpeg#3853
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Account settings
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_52lzsr.dti.jpeg#4240
+            object: html.h6
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Address Book
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_nmrcvz.dti.jpeg#4448
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Add Address
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_u3glgh.dti.jpeg#4608
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address Name *
+        - type:
+            shot: Emerald_n3emso.dti.jpeg#4884
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address Name *
+            value: '${Address_Name}'
+        - click:
+            shot: Emerald_7t44tw.dti.jpeg#5474
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: First name *
+        - type:
+            shot: Emerald_sbj3l4.dti.jpeg#5750
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: First name *
+            value: '${First_name}'
+        - type:
+            shot: Emerald_bf2hlw.dti.jpeg#6034
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Last name *
+            value: '${Last_name}'
+        - click:
+            shot: Emerald_44yq7g.dti.jpeg#6594
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address line 1 *
+        - type:
+            shot: Emerald_xlrpee.dti.jpeg#6870
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address line 1 *
+            value: '${Address_line_1}'
+        - click:
+            shot: Emerald_bk3qa5.dti.jpeg#7430
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address line 2 (optional)
+        - type:
+            shot: Emerald_shlse6.dti.jpeg#7706
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Address line 2 (optional)
+            value: '${Address2}'
+        - type:
+            shot: Emerald_kh6ure.dti.jpeg#7990
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: City *
+            value: '${City}'
+        - type:
+            shot: Emerald_ipo7pi.dti.jpeg#8274
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Country *
+            value: '${Country}'
+        - type:
+            shot: Emerald_v2mjsi.dti.jpeg#8559
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: State / Province *
+            value: '${State_Province}'
+        - type:
+            shot: Emerald_h4cjmv.dti.jpeg#8844
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Zip / Postal code *
+            value: '${Zip_Postal_code}'
+        - type:
+            shot: Emerald_ks74mc.dti.jpeg#9128
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - xpath:
+                      - val: //input[@id='newAddress-phone']
+            value: '${phone}'
+        - type:
+            shot: Emerald_6z2cu2.dti.jpeg#9412
+            object: html.inputemail
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Email *
+            value: '${Email}'
+        - click:
+            shot: Emerald_63kw66.dti.jpeg#9986
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Create Address
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_ztbbcw.dti.jpeg#10092
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Your Account
+        - click:
+            shot: Emerald_m7cxaz.dti.jpeg#10328
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign out
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_2ygz43.dti.jpeg#10505
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg
