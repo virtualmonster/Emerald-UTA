@@ -1,23 +1,17 @@
-note: Generated from recorded traffic using edge 135.0.3179.54
+note: Extracted from Register User and Address.dtx.yaml
 configuration:
   vars:
-    URL: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
-    First_name: firstname
-    First_Name: firstname
-    phone: '1234567890'
-    Country: country
-    Email: name@domain.com
-    State_Province: state
-    Zip_Postal_code: ABC123
-    Last_Name: lastname
-    City: city
-    Last_name: lastname
-    Address_line_1: address1
-    Address_Name: Home
-    Password: Gr33nhat
-    Verify_Password: Gr33nhat
-    Address2: address2
-    Email_Address: bob4@domain.com
+    First_Name: ''
+    State_Province: ''
+    Last_Name: ''
+    City: ''
+    Address_Name: ''
+    Phone: ''
+    Zip_Postal_Code: ''
+    Address_Line_2: ''
+    Address_Line_1: ''
+    Email: ''
+    Country: ''
 steps:
   - with:
       note: Welcome to Emerald
@@ -28,7 +22,7 @@ steps:
             identifiers:
               - properties:
                   - content:
-                      - val: Welcome, firstname
+                      - val: Welcome, ${First_Name}
         - click:
             shot: Welcome to Emerald_cushql.dti.jpeg#3853
             object: html.span
@@ -88,7 +82,7 @@ steps:
               - properties:
                   - label:
                       - val: First name *
-            value: '${First_name}'
+            value: '${First_Name}'
         - type:
             shot: Emerald_bf2hlw.dti.jpeg#6034
             object: html.inputtext
@@ -96,7 +90,7 @@ steps:
               - properties:
                   - label:
                       - val: Last name *
-            value: '${Last_name}'
+            value: '${Last_Name}'
         - click:
             shot: Emerald_44yq7g.dti.jpeg#6594
             object: html.inputtext
@@ -111,7 +105,7 @@ steps:
               - properties:
                   - label:
                       - val: Address line 1 *
-            value: '${Address_line_1}'
+            value: '${Address_Line_1}'
         - click:
             shot: Emerald_bk3qa5.dti.jpeg#7430
             object: html.inputtext
@@ -126,7 +120,7 @@ steps:
               - properties:
                   - label:
                       - val: Address line 2 (optional)
-            value: '${Address2}'
+            value: '${Address_Line_2}'
         - type:
             shot: Emerald_kh6ure.dti.jpeg#7990
             object: html.inputtext
@@ -158,7 +152,7 @@ steps:
               - properties:
                   - label:
                       - val: Zip / Postal code *
-            value: '${Zip_Postal_code}'
+            value: '${Zip_Postal_Code}'
         - type:
             shot: Emerald_ks74mc.dti.jpeg#9128
             object: html.inputtextfield
@@ -166,7 +160,7 @@ steps:
               - properties:
                   - xpath:
                       - val: //input[@id='newAddress-phone']
-            value: '${phone}'
+            value: '${Phone}'
         - type:
             shot: Emerald_6z2cu2.dti.jpeg#9412
             object: html.inputemail
@@ -182,30 +176,3 @@ steps:
               - properties:
                   - content:
                       - val: Create Address
-  - with:
-      note: Emerald
-      steps:
-        - click:
-            shot: Emerald_ztbbcw.dti.jpeg#10092
-            object: html.p
-            identifiers:
-              - properties:
-                  - content:
-                      - val: Your Account
-        - click:
-            shot: Emerald_m7cxaz.dti.jpeg#10328
-            object: html.span
-            identifiers:
-              - properties:
-                  - content:
-                      - val: Sign out
-  - with:
-      note: Emerald
-      steps:
-        - click:
-            shot: Emerald_2ygz43.dti.jpeg#10505
-            object: html.img
-            identifiers:
-              - properties:
-                  - src:
-                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg

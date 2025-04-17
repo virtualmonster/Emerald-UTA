@@ -1,31 +1,11 @@
-note: Generated from recorded traffic using edge 135.0.3179.54
+note: Extracted from Register User and Address.dtx.yaml
 configuration:
   vars:
-    URL: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
-    First_name: firstname
-    First_Name: firstname
-    phone: '1234567890'
-    Country: country
-    Email: name@domain.com
-    State_Province: state
-    Zip_Postal_code: ABC123
-    Last_Name: lastname
-    City: city
-    Last_name: lastname
-    Address_line_1: address1
-    Address_Name: Home
-    Password: Gr33nhat
-    Verify_Password: Gr33nhat
-    Address2: address2
-    Email_Address: bob4@domain.com
+    First_Name: ''
+    Last_Name: ''
+    Password: ''
+    Email: ''
 steps:
-  - open:
-      note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
-      meta:
-        browserName: edge
-        browserVersion: 135.0.3179.54
-        platformName: windows
-      url: '${URL}'
   - with:
       note: Welcome to Emerald
       steps:
@@ -60,7 +40,7 @@ steps:
               - properties:
                   - label:
                       - val: Email Address *
-            value: '${Email_Address}'
+            value: '${Email}'
         - click:
             shot: Emerald_gopome.dti.jpeg#1168
             object: html.inputtext
@@ -99,7 +79,7 @@ steps:
               - properties:
                   - label:
                       - val: Verify Password *
-            value: '${Verify_Password}'
+            value: '${Password}'
         - click:
             shot: Emerald_l5a55e.dti.jpeg#3456
             object: html.button

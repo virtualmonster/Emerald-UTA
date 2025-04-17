@@ -1,0 +1,282 @@
+{
+  "name" : "User and Address Registration",
+  "description" : "",
+  "fields" : [ {
+    "name" : "First_Name",
+    "generatorValues" : {
+      "name" : "Name",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : null
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "title" : "false",
+          "firstName" : "true",
+          "lastName" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Last_Name",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Name",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : null
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "title" : "false",
+          "firstName" : "false",
+          "lastName" : "true"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Phone",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Phone",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "format" : "",
+          "country" : ""
+        }
+      } ]
+    }
+  }, {
+    "name" : "Email",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Function",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "function" : "f(First_Name).concat('.').concat(f(Last_Name)).concat('@ibm.com')"
+        }
+      } ]
+    }
+  }, {
+    "name" : "State_Province",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "true",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Zip_Postal_Code",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "false",
+          "zipCode" : "true",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "City",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "false",
+          "city" : "true",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Address_Line_1",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "true",
+          "secondLine" : "false",
+          "city" : "false",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Address_Line_2",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Address",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : 70
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "firstLine" : "false",
+          "secondLine" : "true",
+          "city" : "false",
+          "zipCode" : "false",
+          "country" : "false"
+        }
+      } ]
+    }
+  }, {
+    "name" : "Address_Name",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "Enumerator",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "list" : [ {
+            "value" : "Home",
+            "distribution" : 20
+          }, {
+            "value" : "Work",
+            "distribution" : 30
+          }, {
+            "value" : "Mum & Dad's",
+            "distribution" : 50
+          } ],
+          "random" : true
+        }
+      } ]
+    }
+  }, {
+    "name" : "Password",
+    "repositoryUrl" : "",
+    "filePath" : "",
+    "generatorValues" : {
+      "name" : "String",
+      "version" : "0.0.1",
+      "categoryId" : "00000",
+      "parentGenerator" : null,
+      "globalProperties" : {
+        "randomDistribution" : "false",
+        "duplicatesAllowed" : "true",
+        "blankPercentage" : "0"
+      },
+      "configurations" : [ {
+        "name" : "Default",
+        "weightage" : 100.0,
+        "properties" : {
+          "minimumCharacters" : 8,
+          "maximumCharacters" : 12,
+          "includeSpecialCharacters" : "true",
+          "includeDigits" : "true"
+        }
+      } ]
+    }
+  } ]
+}
