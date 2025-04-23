@@ -1,0 +1,59 @@
+note: Generated from recorded traffic using edge 135.0.3179.73
+configuration:
+  profile: edge
+  vars:
+    Email_Address: name@domain.com
+    Password: Gr33nhat
+steps:
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: Welcome to Emerald_4ur3py.dti.jpeg#1318
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Living Room
+                locators:
+                  - below:
+                      object: html.inputtext
+                      properties:
+                        - placeholder:
+                            - val: Search
+        - click:
+            shot: Welcome to Emerald_kspplk.dti.jpeg#1627
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Lighting
+  - with:
+      note: Lighting | Emerald
+      steps:
+        - click:
+            shot: Lighting _ Emerald_4xaytp.dti.jpeg#2182
+            object: html.div
+            identifiers:
+              - properties:
+                  - class:
+                      - val: sc-dwalKd fiDMoX MuiCardMedia-root sc-BQMaI dZUIdW
+                locators:
+                  - position: '1'
+  - with:
+      note: Modern Pendant Light | Emerald
+      steps:
+        - click:
+            shot: Modern Pendant Light _ Emerald_cv44gk.dti.jpeg#2544
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Add to Cart
+        - click:
+            shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg

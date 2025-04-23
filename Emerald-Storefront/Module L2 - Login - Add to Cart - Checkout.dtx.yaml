@@ -1,0 +1,7 @@
+steps:
+  - open:
+      note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+      url: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+  - run: Module - Login.dtx.yaml
+  - run: Module - Add Item to Basket.dtx.yaml
+  - run: Module - Checkout Item.dtx.yaml

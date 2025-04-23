@@ -1,0 +1,146 @@
+note: Generated from recorded traffic using edge 135.0.3179.73
+configuration:
+  profile: edge
+  vars:
+    Email_Address:
+      expr: name@domain.com
+      modifier: in
+    Password:
+      expr: Gr33nhat
+      modifier: in
+    CVV_Code:
+      expr: '123'
+      modifier: in
+    Card_Number: '4111111111111111'
+steps:
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: Welcome to Emerald_24r3bq.dti.jpeg#2129
+            object: html.svg
+            identifiers:
+              - properties:
+                  - class:
+                      - val: sc-cwHptR jyLxdx MuiSvgIcon-root MuiSvgIcon-fontSizeMedium
+                locators:
+                  - position: '2'
+        - click:
+            shot: Welcome to Emerald_hyerld.dti.jpeg#2474
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Checkout
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_hi732r.dti.jpeg#2891
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Use This Address
+                locators:
+                  - below:
+                      object: html.p
+                      properties:
+                        - content:
+                            - val: '0123456789'
+        - click:
+            shot: Emerald_72vbu4.dti.jpeg#3285
+            object: html.inputradio
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Express
+        - click:
+            shot: Emerald_ucujsn.dti.jpeg#3710
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Continue to Payment
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_4y3sit.dti.jpeg#3931
+            object: html.inputradio
+            identifiers:
+              - properties:
+                  - label:
+                      - val: VISA Credit Card
+        - click:
+            shot: Emerald_zthxpd.dti.jpeg#4277
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Credit Card Number *
+        - type:
+            shot: Emerald_4v3jzu.dti.jpeg#4945
+            object: html.inputtextfield
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Credit Card Number *
+            value: '${Card_Number}'
+        - select:
+            shot: Emerald_lumjek.dti.jpeg#5295
+            object: html.select
+            identifiers:
+              - properties:
+                  - content:
+                      - val: '2021'
+            value: '2031'
+        - click:
+            shot: Emerald_vzbhah.dti.jpeg#5640
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: CVV Code *
+        - type:
+            shot: Emerald_3lftxc.dti.jpeg#5973
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: CVV Code *
+            value: '${CVV_Code}'
+        - click:
+            shot: Emerald_5nafgk.dti.jpeg#6695
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Use This Address
+        - click:
+            shot: Emerald_632bhs.dti.jpeg#7041
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Review Order
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_s5pvbb.dti.jpeg#7460
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Place Order
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_xwvtay.dti.jpeg#7536
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg

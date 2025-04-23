@@ -1,0 +1,8 @@
+steps:
+  - open:
+      enabled: 'false'
+      note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+      url: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+  - run:
+      url: Module L2 - Login - Add to Cart - Checkout.dtx.yaml
+      dataset: User Data 3.csv

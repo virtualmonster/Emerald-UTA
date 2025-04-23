@@ -1,0 +1,46 @@
+note: Generated from recorded traffic using edge 135.0.3179.73
+configuration:
+  profile: edge
+  vars:
+    Email_Address: name@domain.com
+    Password: Gr33nhat
+steps:
+  - open:
+      enabled: 'false'
+      note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+      url: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+  - with:
+      steps:
+        - click:
+            shot: Welcome to Emerald_jjwini.dti.jpeg#44
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign In / Register
+  - with:
+      note: Emerald
+      steps:
+        - type:
+            shot: Emerald_vwd2ts.dti.jpeg#373
+            object: html.inputemail
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Email Address *
+            value: '${Email_Address}'
+        - type:
+            shot: Emerald_ucpeve.dti.jpeg#547
+            object: html.inputpassword
+            identifiers:
+              - properties:
+                  - label:
+                      - val: Password *
+            value: '${Password}'
+        - click:
+            shot: Emerald_qmmnbn.dti.jpeg#902
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Sign In
