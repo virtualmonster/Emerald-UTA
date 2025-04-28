@@ -1,7 +1,25 @@
+configuration:
+  vars:
+    CVV_Code: '123'
+    Card_Number: '4111111111111111'
+    Email_Address: '${Email}'
+    Password: '${Password}'
 steps:
   - open:
       note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
       url: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
   - run: Module - Login.dtx.yaml
   - run: Module - Add Item to Basket.dtx.yaml
-  - run: Module - Checkout Item.dtx.yaml
+  - run:
+      url: Module - Checkout Item.dtx.yaml
+      in:
+        First_Name: firstname
+        Last_Name: lastname
+        Address_Line_1: addressline1
+        Address_Line_2: addressline2
+        City: city
+        State_Province: state
+        Phone: '00000000000'
+        Email: name@domain.com
+        Country: country
+        Zip_Postal_Code: postcode

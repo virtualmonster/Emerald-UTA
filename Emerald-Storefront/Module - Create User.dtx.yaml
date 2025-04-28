@@ -87,3 +87,14 @@ steps:
               - properties:
                   - content:
                       - val: Complete Registration
+        - verify:
+            shot: Welcome to Emerald_5kjl7u.dti.jpeg#3556
+            object: html.p
+            identifiers:
+              - properties:
+                  - class:
+                      - val: sc-bmzYkS kGzPYV MuiTypography-root MuiTypography-body2
+                          sc-iHGNWf enmOiY
+            properties:
+              - content:
+                  - val: Your Account

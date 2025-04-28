@@ -67,7 +67,7 @@ steps:
               - properties:
                   - label:
                       - val: Address Name *
-            value: '${Address_Name}'
+            value: Home Address
         - click:
             shot: Emerald_7t44tw.dti.jpeg#5474
             object: html.inputtext

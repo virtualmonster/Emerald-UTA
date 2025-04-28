@@ -12,9 +12,8 @@ configuration:
     Zip_Postal_Code: ABC123
     Address_Line_2: address2
     Address_Line_1: address1
-    Email: name2@domain.com
     Country: UK
-    Email_Address: name2@domain.com
+    Email: ''
 steps:
   - open:
       note: Open https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
@@ -61,7 +60,7 @@ steps:
           expr: Password
           type: column
   - run: Module - Create User.dtx.yaml
-  - run: Module - Add Address.dtx.yaml
+  - run: Modules/Module - Add Address.dtx.yaml
   - with:
       note: Emerald
       steps:
