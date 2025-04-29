@@ -33,13 +33,11 @@ steps:
       steps:
         - click:
             shot: Lighting _ Emerald_4xaytp.dti.jpeg#2182
-            object: html.div
+            object: html.p
             identifiers:
               - properties:
-                  - class:
-                      - val: sc-dwalKd fiDMoX MuiCardMedia-root sc-BQMaI dZUIdW
-                locators:
-                  - position: '1'
+                  - content:
+                      - val: Modern Pendant Light
   - with:
       note: Modern Pendant Light | Emerald
       steps:
