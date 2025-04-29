@@ -1,5 +1,5 @@
-configuration:
-  quick: 'true'
+#configuration:
+#  quick: 'true'
 tests:
   - url: Driver - Register Users and Addresses.dtx.yaml
     dataset: ''

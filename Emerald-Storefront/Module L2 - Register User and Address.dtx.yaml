@@ -60,7 +60,7 @@ steps:
           expr: Password
           type: column
   - run: Module - Create User.dtx.yaml
-  - run: Modules/Module - Add Address.dtx.yaml
+  - run: Module - Add Address.dtx.yaml
   - with:
       note: Emerald
       steps:
