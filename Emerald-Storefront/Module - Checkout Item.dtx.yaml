@@ -14,9 +14,10 @@ configuration:
     Zip_Postal_Code: ''
     Phone: ''
     Email: ''
+    billing_exists: 'false'
 steps:
   - with:
-      note: Welcome to Emerald
+      note: Basket
       steps:
         - click:
             shot: Welcome to Emerald_24r3bq.dti.jpeg#2129
@@ -35,7 +36,7 @@ steps:
                   - content:
                       - val: Checkout
   - with:
-      note: Emerald
+      note: Shipping Details
       steps:
         - click:
             shot: Emerald_hi732r.dti.jpeg#2891
@@ -61,7 +62,7 @@ steps:
                   - content:
                       - val: Continue to Payment
   - with:
-      note: Emerald
+      note: Payment Details
       steps:
         - click:
             shot: Emerald_4y3sit.dti.jpeg#3931
@@ -108,6 +109,22 @@ steps:
                   - label:
                       - val: CVV Code *
             value: '${CVV_Code}'
+        - assign:
+            shot: Emerald_5nafgk.dti.jpeg#6695
+            object: html.h6
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Billing Address
+                  - class:
+                      - val: sc-bmzYkS fjXmzP MuiTypography-root MuiTypography-subtitle2
+                          MuiTypography-noWrap sc-iHGNWf enmOiY address-card-width
+            properties:
+              - exist:
+                  - var: billing_exists
+  - if:
+      condition: billing_exists == 'false'
+      steps:
         - click:
             shot: Emerald_5nafgk.dti.jpeg#6695
             object: html.button
@@ -115,132 +132,150 @@ steps:
               - properties:
                   - content:
                       - val: Create a New Address
-  - with:
-      note: Emerald
+        - with:
+            note: Emerald
+            steps:
+              - click:
+                  shot: Emerald_u3glgh.dti.jpeg#4608
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address Name *
+              - type:
+                  shot: Emerald_n3emso.dti.jpeg#4884
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address Name *
+                  value: Billing Address
+              - click:
+                  shot: Emerald_7t44tw.dti.jpeg#5474
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: First name *
+              - type:
+                  shot: Emerald_sbj3l4.dti.jpeg#5750
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: First name *
+                  value: '${First_Name}'
+              - type:
+                  shot: Emerald_bf2hlw.dti.jpeg#6034
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Last name *
+                  value: '${Last_Name}'
+              - click:
+                  shot: Emerald_44yq7g.dti.jpeg#6594
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address line 1 *
+              - type:
+                  shot: Emerald_xlrpee.dti.jpeg#6870
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address line 1 *
+                  value: '${Address_Line_1}'
+              - click:
+                  shot: Emerald_bk3qa5.dti.jpeg#7430
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address line 2 (optional)
+              - type:
+                  shot: Emerald_shlse6.dti.jpeg#7706
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Address line 2 (optional)
+                  value: '${Address_Line_2}'
+              - type:
+                  shot: Emerald_kh6ure.dti.jpeg#7990
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: City *
+                  value: '${City}'
+              - type:
+                  shot: Emerald_ipo7pi.dti.jpeg#8274
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Country *
+                  value: '${Country}'
+              - type:
+                  shot: Emerald_v2mjsi.dti.jpeg#8559
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: State / Province *
+                  value: '${State_Province}'
+              - type:
+                  shot: Emerald_h4cjmv.dti.jpeg#8844
+                  object: html.inputtext
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Zip / Postal code *
+                  value: '${Zip_Postal_Code}'
+              - type:
+                  shot: Emerald_ks74mc.dti.jpeg#9128
+                  object: html.inputtextfield
+                  identifiers:
+                    - properties:
+                        - xpath:
+                            - val: //input[@id='newAddress-phone']
+                  value: '${Phone}'
+              - type:
+                  shot: Emerald_6z2cu2.dti.jpeg#9412
+                  object: html.inputemail
+                  identifiers:
+                    - properties:
+                        - label:
+                            - val: Email *
+                  value: '${Email}'
+              - click:
+                  shot: Emerald_63kw66.dti.jpeg#9986
+                  object: html.button
+                  identifiers:
+                    - properties:
+                        - content:
+                            - val: Save and select this address
+  - if:
+      condition: billing_exists == 'true'
       steps:
         - click:
-            shot: Emerald_u3glgh.dti.jpeg#4608
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address Name *
-        - type:
-            shot: Emerald_n3emso.dti.jpeg#4884
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address Name *
-            value: Billing Address
-        - click:
-            shot: Emerald_7t44tw.dti.jpeg#5474
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: First name *
-        - type:
-            shot: Emerald_sbj3l4.dti.jpeg#5750
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: First name *
-            value: '${First_Name}'
-        - type:
-            shot: Emerald_bf2hlw.dti.jpeg#6034
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Last name *
-            value: '${Last_Name}'
-        - click:
-            shot: Emerald_44yq7g.dti.jpeg#6594
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address line 1 *
-        - type:
-            shot: Emerald_xlrpee.dti.jpeg#6870
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address line 1 *
-            value: '${Address_Line_1}'
-        - click:
-            shot: Emerald_bk3qa5.dti.jpeg#7430
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address line 2 (optional)
-        - type:
-            shot: Emerald_shlse6.dti.jpeg#7706
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Address line 2 (optional)
-            value: '${Address_Line_2}'
-        - type:
-            shot: Emerald_kh6ure.dti.jpeg#7990
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: City *
-            value: '${City}'
-        - type:
-            shot: Emerald_ipo7pi.dti.jpeg#8274
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Country *
-            value: '${Country}'
-        - type:
-            shot: Emerald_v2mjsi.dti.jpeg#8559
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: State / Province *
-            value: '${State_Province}'
-        - type:
-            shot: Emerald_h4cjmv.dti.jpeg#8844
-            object: html.inputtext
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Zip / Postal code *
-            value: '${Zip_Postal_Code}'
-        - type:
-            shot: Emerald_ks74mc.dti.jpeg#9128
-            object: html.inputtextfield
-            identifiers:
-              - properties:
-                  - xpath:
-                      - val: //input[@id='newAddress-phone']
-            value: '${Phone}'
-        - type:
-            shot: Emerald_6z2cu2.dti.jpeg#9412
-            object: html.inputemail
-            identifiers:
-              - properties:
-                  - label:
-                      - val: Email *
-            value: '${Email}'
-        - click:
-            shot: Emerald_63kw66.dti.jpeg#9986
-            object: html.button
+            shot: Emerald_5nafgk.dti.jpeg#6695
+            object: html.p
             identifiers:
               - properties:
                   - content:
-                      - val: Save and select this address
+                      - val: Use This Address
+  - click:
+      enabled: 'false'
+      shot: Emerald_5nafgk.dti.jpeg#6695
+      object: html.span
+      identifiers:
+        - properties:
+            - xpath:
+                - val: {}
   - with:
       note: Emerald
       steps:

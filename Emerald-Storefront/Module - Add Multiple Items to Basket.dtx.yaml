@@ -1,0 +1,85 @@
+note: Generated from recorded traffic using edge 135.0.3179.73
+configuration:
+  profile: edge
+  vars:
+    Email_Address: name@domain.com
+    Password: Gr33nhat
+    Category: Lighting
+    num_order_items: '0'
+    iteration_number: '0'
+steps:
+  - assign:
+      vars:
+        num_order_items: ${Math.floor(Math.random() * 6) + 1}
+  - assign:
+      vars:
+        Category: Lighting
+  - with:
+      note: Living Room
+      steps:
+        - click:
+            shot: Welcome to Emerald_4ur3py.dti.jpeg#1318
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Living Room
+                locators:
+                  - below:
+                      object: html.inputtext
+                      properties:
+                        - placeholder:
+                            - val: Search
+        - click:
+            shot: Welcome to Emerald_kspplk.dti.jpeg#1627
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Lighting
+  - while:
+      condition: 'iteration_number++ < num_order_items '
+      steps:
+        - with:
+            note: Lighting | Emerald
+            steps:
+              - click:
+                  shot: Lighting _ Emerald_4xaytp.dti.jpeg#2182
+                  object: html.div
+                  identifiers:
+                    - properties:
+                        - class:
+                            - val: sc-dwalKd fiDMoX MuiCardMedia-root sc-BQMaI dZUIdW
+                      locators:
+                        - position: '${iteration_number}'
+        - with:
+            note: Modern Pendant Light | Emerald
+            steps:
+              - click:
+                  shot: Modern Pendant Light _ Emerald_cv44gk.dti.jpeg#2544
+                  object: html.button
+                  identifiers:
+                    - properties:
+                        - content:
+                            - val: Add to Cart
+              - click:
+                  shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
+                  object: html.p
+                  identifiers:
+                    - properties:
+                        - content:
+                            - val: Living Room
+              - click:
+                  shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
+                  object: html.p
+                  identifiers:
+                    - properties:
+                        - content:
+                            - val: Lighting
+  - click:
+      shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
+      object: html.img
+      identifiers:
+        - properties:
+            - src:
+                - val: /EmeraldSAS/images/type-icons/hcl-logo.svg

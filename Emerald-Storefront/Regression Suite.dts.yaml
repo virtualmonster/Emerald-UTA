@@ -1,7 +1,3 @@
-#configuration:
-#  quick: 'true'
 tests:
-  - url: Driver - Register Users and Addresses.dtx.yaml
-    dataset: ''
-  - url: Driver - Login - Add to Cart - Checkout.dtx.yaml
-    dataset: ''
+  - Driver - Register Users and Addresses.dtx.yaml
+  - Driver - Login - Add to Cart - Checkout.dtx.yaml
