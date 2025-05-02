@@ -26,3 +26,4 @@ steps:
         Email: name@domain.com
         Country: country
         Zip_Postal_Code: postcode
+  - run: Module - Verify Order History.dtx.yaml

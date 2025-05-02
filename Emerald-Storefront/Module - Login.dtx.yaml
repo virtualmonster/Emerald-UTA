@@ -21,6 +21,26 @@ steps:
   - with:
       note: Emerald
       steps:
+        - verify:
+            shot: Emerald_vwd2ts.dti.jpeg#373
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Don't have an account?
+            properties:
+              - content:
+                  - val: Don't have an account?
+        - verify:
+            shot: Emerald_vwd2ts.dti.jpeg#373
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Forgot your password?
+            properties:
+              - content:
+                  - val: Forgot your password?
         - type:
             shot: Emerald_vwd2ts.dti.jpeg#373
             object: html.inputemail

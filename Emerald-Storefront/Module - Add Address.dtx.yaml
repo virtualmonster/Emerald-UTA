@@ -43,6 +43,16 @@ steps:
   - with:
       note: Emerald
       steps:
+        - verify:
+            shot: Emerald_nmrcvz.dti.jpeg#4448
+            object: html.h6
+            identifiers:
+              - properties:
+                  - content:
+                      - val: You have no saved addresses.
+            properties:
+              - content:
+                  - val: You have no saved addresses.
         - click:
             shot: Emerald_nmrcvz.dti.jpeg#4448
             object: html.button

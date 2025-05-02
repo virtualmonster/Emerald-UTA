@@ -12,6 +12,7 @@ steps:
       vars:
         num_order_items: ${Math.floor(Math.random() * 6) + 1}
   - assign:
+      enabled: 'false'
       vars:
         Category: Lighting
   - with:

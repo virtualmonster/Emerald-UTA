@@ -19,6 +19,26 @@ steps:
   - with:
       note: Emerald
       steps:
+        - verify:
+            shot: Emerald_w2kjld.dti.jpeg#416
+            object: html.a
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Forgot your password?
+            properties:
+              - content:
+                  - val: Forgot your password?
+        - verify:
+            shot: Emerald_w2kjld.dti.jpeg#416
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Don't have an account?
+            properties:
+              - content:
+                  - val: Don't have an account?
         - click:
             shot: Emerald_w2kjld.dti.jpeg#416
             object: html.button

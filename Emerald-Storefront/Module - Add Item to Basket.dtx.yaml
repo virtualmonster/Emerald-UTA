@@ -31,6 +31,16 @@ steps:
   - with:
       note: Lighting | Emerald
       steps:
+        - verify:
+            shot: Lighting _ Emerald_4xaytp.dti.jpeg#2182
+            object: html.h6
+            identifiers:
+              - properties:
+                  - content:
+                      - val: 8 products found
+            properties:
+              - content:
+                  - val: 8 products found
         - click:
             shot: Lighting _ Emerald_4xaytp.dti.jpeg#2182
             object: html.p
@@ -41,6 +51,26 @@ steps:
   - with:
       note: Modern Pendant Light | Emerald
       steps:
+        - verify:
+            shot: Modern Pendant Light _ Emerald_cv44gk.dti.jpeg#2544
+            object: html.div
+            identifiers:
+              - properties:
+                  - content:
+                      - val: |-
+                          Add to Wish List
+                          ​
+                locators:
+                  - inside:
+                      object: html.div
+                      properties:
+                        - id:
+                            - val: wishList_select
+            properties:
+              - content:
+                  - val: |-
+                      Add to Wish List
+                      ​
         - click:
             shot: Modern Pendant Light _ Emerald_cv44gk.dti.jpeg#2544
             object: html.button
@@ -48,6 +78,22 @@ steps:
               - properties:
                   - content:
                       - val: Add to Cart
+        - verify:
+            shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: $135.00
+                locators:
+                  - above:
+                      object: html.button
+                      properties:
+                        - content:
+                            - val: Checkout
+            properties:
+              - content:
+                  - val: $135.00
         - click:
             shot: Modern Pendant Light _ Emerald_el6xvc.dti.jpeg#2643
             object: html.img

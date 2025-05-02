@@ -1,0 +1,93 @@
+note: Generated from recorded traffic using edge 135.0.3179.98
+configuration:
+  profile: edge
+  vars:
+    APP_Emerald_Storefront_URL: https://commerce-preview.sbx0032.play.hclsofy.com/Emerald/
+    price_paid: ''
+    order_number: ''
+steps:
+  - with:
+      note: Welcome to Emerald
+      steps:
+        - click:
+            shot: Welcome to Emerald_75bomz.dti.jpeg#1295
+            object: html.p
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Your Account
+        - click:
+            shot: Welcome to Emerald_hmvbup.dti.jpeg#1594
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Account settings
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_bxmobz.dti.jpeg#1962
+            object: html.button
+            identifiers:
+              - properties:
+                  - content:
+                      - val: View Order History
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_lm4yyc.dti.jpeg#3868
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: Search by Order ID
+        - type:
+            shot: Emerald_gmqs5o.dti.jpeg#4252
+            object: html.inputtext
+            identifiers:
+              - properties:
+                  - placeholder:
+                      - val: Search by Order ID
+            value: '${order_number}'
+        - press:
+            shot: Emerald_3jddqc.dti.jpeg#4964
+            key: enter
+        - click:
+            shot: Emerald_afmjmu.dti.jpeg#5320
+            object: html.svg
+            identifiers:
+              - properties:
+                  - class:
+                      - val: sc-cwHptR jyLxdx MuiSvgIcon-root MuiSvgIcon-fontSizeMedium
+                          sc-dSCufp GDwYQ
+  - with:
+      note: Emerald
+      steps:
+        - click:
+            shot: Emerald_7hrekx.dti.jpeg#5542
+            object: html.span
+            identifiers:
+              - properties:
+                  - content:
+                      - val: Show attributes
+        - verify:
+            shot: Emerald_s3vz2q.dti.jpeg#6897
+            object: html.h6
+            identifiers:
+              - properties:
+                  - class:
+                      - val: sc-bmzYkS BxpMI MuiTypography-root MuiTypography-subtitle1
+                          MuiTypography-alignRight MuiTypography-gutterBottom sc-iHGNWf
+                          enmOiY
+            properties:
+              - content:
+                  - contains: '${price_paid}'
+        - click:
+            shot: Emerald_txuyfi.dti.jpeg#6960
+            object: html.img
+            identifiers:
+              - properties:
+                  - src:
+                      - val: /EmeraldSAS/images/type-icons/hcl-logo.svg
