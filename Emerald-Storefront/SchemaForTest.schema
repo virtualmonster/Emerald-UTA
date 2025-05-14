@@ -1,0 +1,625 @@
+{
+  "schemaName" : "SchemaForTest",
+  "description" : "",
+  "constraints" : [ {
+    "base" : {
+      "field" : "id",
+      "dataDefinition" : "t_users"
+    },
+    "foreign" : {
+      "field" : "user_id",
+      "dataDefinition" : "t_addresses"
+    },
+    "distribution" : {
+      "min" : 1,
+      "max" : 1
+    },
+    "description" : "t_addresses_user_id_fkey"
+  }, {
+    "base" : {
+      "field" : "id",
+      "dataDefinition" : "t_books"
+    },
+    "foreign" : {
+      "field" : "book_id",
+      "dataDefinition" : "t_checkouts"
+    },
+    "distribution" : {
+      "min" : 1,
+      "max" : 10
+    },
+    "description" : "t_checkouts_book_id_fkey"
+  }, {
+    "base" : {
+      "field" : "id",
+      "dataDefinition" : "t_users"
+    },
+    "foreign" : {
+      "field" : "user_id",
+      "dataDefinition" : "t_checkouts"
+    },
+    "distribution" : {
+      "min" : 1,
+      "max" : 10
+    },
+    "description" : "t_checkouts_user_id_fkey"
+  }, {
+    "base" : {
+      "field" : "id",
+      "dataDefinition" : "t_books"
+    },
+    "foreign" : {
+      "field" : "book_id",
+      "dataDefinition" : "t_reviews"
+    },
+    "distribution" : {
+      "min" : 1,
+      "max" : 10
+    },
+    "description" : "t_reviews_book_id_fkey"
+  } ],
+  "databaseConnection" : "Postgres",
+  "entities" : [ {
+    "referencedDataDefinition" : "",
+    "inlineDataDefinition" : {
+      "name" : "t_addresses",
+      "description" : "",
+      "fields" : [ {
+        "name" : "user_id"
+      }, {
+        "name" : "street",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : "1000",
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      }, {
+        "name" : "city",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : 10,
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      }, {
+        "name" : "state",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : 10,
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      } ]
+    },
+    "rowCount" : 0
+  }, {
+    "referencedDataDefinition" : "",
+    "inlineDataDefinition" : {
+      "name" : "t_books",
+      "description" : "",
+      "fields" : [ {
+        "name" : "id",
+        "generatorValues" : {
+          "name" : "Number",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : false,
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "numbers" : {
+                "by" : "valueRange",
+                "min" : "1",
+                "max" : "1000"
+              },
+              "decimalPlaces" : {
+                "min" : "",
+                "max" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "title",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : "1000",
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      }, {
+        "name" : "author",
+        "generatorValues" : {
+          "name" : "Name",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : null
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "title" : "false",
+              "firstName" : "true",
+              "lastName" : "true"
+            }
+          } ]
+        }
+      }, {
+        "name" : "published_date",
+        "generatorValues" : {
+          "name" : "DateTime",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "pattern" : "SQL DateTime",
+              "limitDates" : {
+                "from" : 1746787692,
+                "to" : 1778323692,
+                "exclude" : [ ],
+                "specificDatesToExclude" : ""
+              },
+              "limitTimes" : {
+                "from" : "12:00:00 am",
+                "to" : "11:59:59 pm"
+              },
+              "offset" : {
+                "from" : null,
+                "by" : "",
+                "value" : null,
+                "unit" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "isbn",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : 10,
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      } ]
+    },
+    "rowCount" : 3
+  }, {
+    "referencedDataDefinition" : "",
+    "inlineDataDefinition" : {
+      "name" : "t_checkouts",
+      "description" : "",
+      "fields" : [ {
+        "name" : "id",
+        "generatorValues" : {
+          "name" : "Number",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : false,
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "numbers" : {
+                "by" : "valueRange",
+                "min" : "1",
+                "max" : "1000"
+              },
+              "decimalPlaces" : {
+                "min" : "",
+                "max" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "user_id"
+      }, {
+        "name" : "book_id"
+      }, {
+        "name" : "checkout_date_mmddyyyy",
+        "generatorValues" : {
+          "name" : "DateTime",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "pattern" : "MM/dd/yyyy",
+              "limitDates" : {
+                "from" : 1746787692,
+                "to" : 1778323692,
+                "exclude" : [ ],
+                "specificDatesToExclude" : ""
+              },
+              "limitTimes" : {
+                "from" : "12:00:00 am",
+                "to" : "11:59:59 pm"
+              },
+              "offset" : {
+                "from" : null,
+                "by" : "",
+                "value" : null,
+                "unit" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "return_date_mmddyyyy",
+        "generatorValues" : {
+          "name" : "DateTime",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "pattern" : "MM/dd/yyyy",
+              "limitDates" : {
+                "from" : 1746787692,
+                "to" : 1778323692,
+                "exclude" : [ ],
+                "specificDatesToExclude" : ""
+              },
+              "limitTimes" : {
+                "from" : "12:00:00 am",
+                "to" : "11:59:59 pm"
+              },
+              "offset" : {
+                "from" : null,
+                "by" : "",
+                "value" : null,
+                "unit" : ""
+              }
+            }
+          } ]
+        }
+      } ]
+    },
+    "rowCount" : 0
+  }, {
+    "referencedDataDefinition" : "",
+    "inlineDataDefinition" : {
+      "name" : "t_reviews",
+      "description" : "",
+      "fields" : [ {
+        "name" : "id",
+        "generatorValues" : {
+          "name" : "Number",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : false,
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "numbers" : {
+                "by" : "valueRange",
+                "min" : "1",
+                "max" : "1000"
+              },
+              "decimalPlaces" : {
+                "min" : "",
+                "max" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "book_id"
+      }, {
+        "name" : "reviewer_name",
+        "generatorValues" : {
+          "name" : "Name",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : null
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "title" : "false",
+              "firstName" : "true",
+              "lastName" : "true"
+            }
+          } ]
+        }
+      }, {
+        "name" : "content",
+        "generatorValues" : {
+          "name" : "String",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "minimumCharacters" : "10",
+              "maximumCharacters" : "1000",
+              "includeSpecialCharacters" : "false",
+              "includeDigits" : "false"
+            }
+          } ]
+        }
+      }, {
+        "name" : "rating",
+        "generatorValues" : {
+          "name" : "Number",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "numbers" : {
+                "by" : "valueRange",
+                "min" : "1",
+                "max" : "1000"
+              },
+              "decimalPlaces" : {
+                "min" : "",
+                "max" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "published_date",
+        "generatorValues" : {
+          "name" : "DateTime",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "pattern" : "SQL DateTime",
+              "limitDates" : {
+                "from" : 1746787692,
+                "to" : 1778323692,
+                "exclude" : [ ],
+                "specificDatesToExclude" : ""
+              },
+              "limitTimes" : {
+                "from" : "12:00:00 am",
+                "to" : "11:59:59 pm"
+              },
+              "offset" : {
+                "from" : null,
+                "by" : "",
+                "value" : null,
+                "unit" : ""
+              }
+            }
+          } ]
+        }
+      } ]
+    },
+    "rowCount" : 0
+  }, {
+    "referencedDataDefinition" : "",
+    "inlineDataDefinition" : {
+      "name" : "t_users",
+      "description" : "",
+      "fields" : [ {
+        "name" : "id",
+        "generatorValues" : {
+          "name" : "Number",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "numbers" : {
+                "by" : "valueRange",
+                "min" : "1",
+                "max" : "1000"
+              },
+              "decimalPlaces" : {
+                "min" : "",
+                "max" : ""
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "username",
+        "generatorValues" : {
+          "name" : "Name",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "duplicatesAllowed" : "true",
+            "blankPercentage" : null
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "title" : "false",
+              "firstName" : "true",
+              "lastName" : "true"
+            }
+          } ]
+        }
+      }, {
+        "name" : "enabled",
+        "generatorValues" : {
+          "name" : "Boolean",
+          "version" : "0.0.1",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
+          "globalProperties" : {
+            "randomDistribution" : "false",
+            "blankPercentage" : "0"
+          },
+          "configurations" : [ {
+            "name" : "Default",
+            "weightage" : 100.0,
+            "properties" : {
+              "list" : [ {
+                "value" : "Yes",
+                "distribution" : 60
+              }, {
+                "value" : "No",
+                "distribution" : 40
+              } ],
+              "random" : true
+            }
+          } ]
+        }
+      } ]
+    },
+    "rowCount" : 5
+  } ]
+}

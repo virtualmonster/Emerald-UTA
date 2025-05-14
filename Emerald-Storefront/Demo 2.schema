@@ -1,0 +1,7 @@
+{
+  "schemaName" : "Demo 2",
+  "description" : "",
+  "constraints" : [ ],
+  "databaseConnection" : "Oracle",
+  "entities" : [ ]
+}

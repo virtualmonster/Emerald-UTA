@@ -1,0 +1,6 @@
+configuration:
+  concurrent: '3'
+tests:
+  - Regression Suite.dts.yaml
+  - Regression Suite.dts.yaml
+  - Regression Suite.dts.yaml

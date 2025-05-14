@@ -1,0 +1,33 @@
+{
+  "name" : "Title",
+  "version" : "0.0.1",
+  "categoryId" : "cc483a2b-7d71-4dea-883a-2b7d711dea3e",
+  "parentGenerator" : "Text",
+  "globalProperties" : {
+    "randomDistribution" : "false",
+    "duplicatesAllowed" : "true",
+    "blankPercentage" : "0"
+  },
+  "configurations" : [ {
+    "name" : "Config_1",
+    "weightage" : 60.0,
+    "properties" : {
+      "textType" : "Words",
+      "count" : 3
+    }
+  }, {
+    "name" : "Config_2",
+    "weightage" : 30.0,
+    "properties" : {
+      "textType" : "Words",
+      "count" : 2
+    }
+  }, {
+    "name" : "Config_3",
+    "weightage" : 10.0,
+    "properties" : {
+      "textType" : "Words",
+      "count" : 4
+    }
+  } ]
+}

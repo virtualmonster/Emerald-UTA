@@ -1,0 +1,18 @@
+{
+  "name" : "Email First and Last Names",
+  "version" : "0.0.1",
+  "categoryId" : "7994e3f3-2ff8-4373-94e3-f32ff8637384",
+  "parentGenerator" : "Function",
+  "globalProperties" : {
+    "randomDistribution" : "false",
+    "duplicatesAllowed" : "true",
+    "blankPercentage" : "0"
+  },
+  "configurations" : [ {
+    "name" : "Default",
+    "weightage" : 100.0,
+    "properties" : {
+      "function" : "f(FIRST_NAME).concat(f(LAST_NAME)).concat('@').concat('company').concat('.com')"
+    }
+  } ]
+}
