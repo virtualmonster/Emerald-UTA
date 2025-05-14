@@ -130,7 +130,7 @@ steps:
               - exist:
                   - var: billing_exists
   - if:
-      condition: billing_exists == 'false'
+      condition: billing_exists == false
       steps:
         - click:
             shot: Emerald_5nafgk.dti.jpeg#6695
@@ -266,7 +266,7 @@ steps:
                         - content:
                             - val: Save and select this address
   - if:
-      condition: billing_exists == 'true'
+      condition: billing_exists == true
       steps:
         - click:
             shot: Emerald_5nafgk.dti.jpeg#6695
