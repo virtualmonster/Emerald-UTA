@@ -11,7 +11,7 @@
       "dataDefinition" : "COUNTRIES"
     },
     "distribution" : {
-      "min" : 1,
+      "min" : 3,
       "max" : 10
     },
     "description" : "COUNTR_REG_FK"
@@ -25,8 +25,8 @@
       "dataDefinition" : "DEPARTMENTS"
     },
     "distribution" : {
-      "min" : 1,
-      "max" : 10
+      "min" : 4,
+      "max" : 7
     },
     "description" : "DEPT_LOC_FK"
   }, {
@@ -53,8 +53,8 @@
       "dataDefinition" : "EMPLOYEES"
     },
     "distribution" : {
-      "min" : 1,
-      "max" : 10
+      "min" : 10,
+      "max" : 100
     },
     "description" : "EMP_DEPT_FK"
   }, {
@@ -109,8 +109,8 @@
       "dataDefinition" : "LOCATIONS"
     },
     "distribution" : {
-      "min" : 1,
-      "max" : 10
+      "min" : 5,
+      "max" : 20
     },
     "description" : "LOC_C_ID_FK"
   } ],
@@ -122,16 +122,14 @@
       "description" : "",
       "fields" : [ {
         "name" : "EMPLOYEE_ID",
-        "repositoryUrl" : "",
-        "filePath" : "Emerald-Storefront/Employee/Employee ID.cgen",
         "generatorValues" : {
-          "name" : "Employee ID",
+          "name" : "Number",
           "version" : "0.0.1",
-          "categoryId" : "e32aae03-7f67-4221-aaae-037f672221eb",
-          "parentGenerator" : "Number",
+          "categoryId" : "00000",
+          "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -379,7 +377,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -407,7 +405,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "false",
+            "duplicatesAllowed" : "true",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -426,7 +424,7 @@
         "name" : "REGION_ID"
       } ]
     },
-    "rowCount" : 4
+    "rowCount" : 12
   }, {
     "referencedDataDefinition" : "",
     "inlineDataDefinition" : {
@@ -441,7 +439,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -514,7 +512,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -522,7 +520,7 @@
             "weightage" : 100.0,
             "properties" : {
               "numbers" : {
-                "by" : "valueRange",
+                "by" : "noOfDigits",
                 "min" : 10,
                 "max" : 10
               },
@@ -537,7 +535,7 @@
         "name" : "LOCATION_ID"
       } ]
     },
-    "rowCount" : 28
+    "rowCount" : 7
   }, {
     "referencedDataDefinition" : "",
     "inlineDataDefinition" : {
@@ -552,7 +550,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -579,6 +577,7 @@
           "categoryId" : "00000",
           "parentGenerator" : null,
           "globalProperties" : {
+            "duplicatesAllowed" : "false",
             "randomDistribution" : "false",
             "blankPercentage" : "0"
           },
@@ -598,11 +597,11 @@
               }, {
                 "name" : "",
                 "distribution" : 0,
-                "value" : "Mechanic"
+                "value" : "Driver"
               }, {
                 "name" : "",
                 "distribution" : 0,
-                "value" : "Driver"
+                "value" : "Mechanic"
               }, {
                 "name" : "",
                 "distribution" : 0,
@@ -752,7 +751,7 @@
         "name" : "DEPARTMENT_ID"
       } ]
     },
-    "rowCount" : 10
+    "rowCount" : 110
   }, {
     "referencedDataDefinition" : "",
     "inlineDataDefinition" : {
@@ -767,7 +766,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -843,7 +842,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -886,7 +885,7 @@
         "name" : "COUNTRY_ID"
       } ]
     },
-    "rowCount" : 23
+    "rowCount" : 24
   }, {
     "referencedDataDefinition" : "",
     "inlineDataDefinition" : {
@@ -901,7 +900,7 @@
           "parentGenerator" : null,
           "globalProperties" : {
             "randomDistribution" : "false",
-            "duplicatesAllowed" : "true",
+            "duplicatesAllowed" : "false",
             "blankPercentage" : "0"
           },
           "configurations" : [ {
@@ -928,6 +927,7 @@
           "categoryId" : "00000",
           "parentGenerator" : null,
           "globalProperties" : {
+            "duplicatesAllowed" : "false",
             "randomDistribution" : "false",
             "blankPercentage" : "0"
           },
@@ -937,24 +937,32 @@
             "properties" : {
               "list" : [ {
                 "value" : "Europe",
-                "distribution" : 25
-              }, {
-                "value" : "Asia",
-                "distribution" : 25
+                "distribution" : 20
               }, {
                 "value" : "Americas",
-                "distribution" : 25
+                "distribution" : 30
+              }, {
+                "value" : "MIddle East",
+                "distribution" : 50
               }, {
                 "name" : "",
-                "distribution" : 25,
-                "value" : "Middle East"
+                "distribution" : 0,
+                "value" : "Asia"
+              }, {
+                "name" : "",
+                "distribution" : 0,
+                "value" : "Africa"
+              }, {
+                "name" : "",
+                "distribution" : 0,
+                "value" : "Australasia"
               } ],
-              "random" : "false"
+              "random" : true
             }
           } ]
         }
       } ]
     },
-    "rowCount" : 4
+    "rowCount" : 6
   } ]
 }
